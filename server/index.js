@@ -17,6 +17,8 @@ app.get("/", (req,res)=>{
     res.send("Roaming Lanka Mobile App Backend is running successfully ):");
 })
 
-app.listen(5000,()=>{
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT,()=>{
     console.log("Server is running on port http://localhost:5000");
 });
